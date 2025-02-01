@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none; /* For Firefox */
+    scrollbar-color: rgba(214, 179, 83, 1) transparent; /* For Firefox */
+}
+
+.allComps {
+    position: relative;
+    background: var(--Primary-Yellow, #FFFFD3);
+}
+
+/* WebKit-based browsers (Chrome, Safari, Edge) */
+.allComps::-webkit-scrollbar {
+    width: 3px; /* Adjust thickness */
+}
+
+.allComps::-webkit-scrollbar-thumb {
+    background-color: rgba(214, 179, 83, 1); /* Thumb color */
+    border-radius: 6px; /* Round edges */
+}
+
+.allComps::-webkit-scrollbar-track {
+    background: transparent; /* Background track color */
+}
+
+.wwcf {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.acww{
+    flex-direction: column;
+}
+
+/* Scrollbar styling for wwcf (optional, if needed separately) */
+.wwcf::-webkit-scrollbar {
+    width: 3px;
+}
+
+.wwcf::-webkit-scrollbar-thumb {
+    background-color: rgba(214, 179, 83, 1);
+    border-radius: 4px;
+}
+
+.wwcf::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.rfw{
+    min-height: 100vh;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input[type="checkbox"] {
+    appearance: none; /* Removes default styling */
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000; /* Box border */
+    background-color: transparent; /* Box color */
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: transparent; /* Background when checked */
+    border: 1px solid #000;
+  }
+  
+  input[type="checkbox"]:checked::before {
+
+    content: '✔'; /* Checkmark */
+    color: #eab114; /* Checkmark color */
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  

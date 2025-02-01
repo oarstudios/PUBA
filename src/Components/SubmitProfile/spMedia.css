@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+    .image-section1{
+        display: none;
+    }
+
+    .submit-profile-container{
+        justify-content: center;
+    }
+
+    .form-section1 h1{
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+    .form-section1{
+        width: 85%;
+        padding-right: 0;
+    }
+}

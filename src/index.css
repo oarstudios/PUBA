@@ -1,0 +1,27 @@
+/* Apply styles to the scrollbar */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Cal Sans";
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(255, 255, 211, 1) transparent; /* For Firefox */
+}
+
+/* For WebKit-based browsers (Chrome, Edge, Safari) */
+body::-webkit-scrollbar {
+  width: 6px; /* Adjust thickness */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 211, 1); /* Thumb color */
+  border-radius: 4px; /* Round edges */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* Background track color */
+}

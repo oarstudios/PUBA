@@ -1,0 +1,129 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-size: cover; /* Ensure texture fills the area */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: row; /* Default layout for larger screens */
+  width: 90%; /* Max width for content alignment */
+  max-width: 1400px; /* To restrict the overall size */
+  height: 80%; /* Adjust height if needed */
+}
+
+.welcome-left {
+  flex: 4; /* 40% of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera-icon {
+  width: 100%; /* Adjust to fit the container */
+  height: auto;
+  max-width: 500px; /* Restrict the maximum width */
+}
+
+.welcome-right {
+  flex: 6; /* 60% of the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; /* Add some padding for text spacing */
+}
+
+.welcome-title {
+  font-family: Cal Sans;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 66.24px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #D6B353;
+}
+
+.welcome-description {
+  font-family: Cal Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 44.16px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .welcome-content {
+    flex-direction: column; /* Stack the content vertically */
+    height: auto; /* Let the content define the height */
+  }
+
+  .welcome-left,
+  .welcome-right {
+    flex: 1; /* Equal space for both sections */
+    width: 100%; /* Take up full width */
+  }
+
+  .camera-icon {
+    max-width: 300px; /* Reduce the size of the image */
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+
+  .welcome-title {
+    font-size: 36px; /* Smaller font size for tablets */
+    line-height: 50px;
+    text-align: center; /* Center-align text on smaller screens */
+  }
+
+  .welcome-description {
+    font-size: 18px; /* Smaller font size for tablets */
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    padding: 20px; /* Add padding around the container */
+  }
+
+  .welcome-content {
+    align-items: center; /* Center align content for mobile */
+  }
+
+  .camera-icon {
+    max-width: 250px; /* Further reduce image size */
+  }
+
+  .welcome-title {
+    font-size: 28px; /* Smaller font for mobile devices */
+    line-height: 40px;
+  }
+
+  .welcome-description {
+    font-size: 16px; /* Smaller font for mobile devices */
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 24px; /* Adjust for very small screens */
+    line-height: 34px;
+  }
+
+  .welcome-description {
+    font-size: 14px; /* Further reduce text size */
+    line-height: 20px;
+    text-align: justify;
+  }
+
+  .camera-icon {
+    max-width: 200px; /* Smallest size for the image */
+  }
+}

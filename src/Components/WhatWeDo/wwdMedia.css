@@ -1,0 +1,26 @@
+@media (max-width: 425px) {
+    .what-we-do-container{
+        padding: 20px;
+    }
+
+    .grid-container{
+        gap: 10px;
+    }
+
+    .grid-text{
+        bottom: 5px;
+    }
+
+    .what-we-do-title{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+
+    .what-we-do-title{
+        font-size: 5svw;
+        margin-bottom: 0;
+    }
+}

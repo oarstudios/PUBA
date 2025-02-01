@@ -1,0 +1,246 @@
+.submit-profile-container {
+  display: flex
+  ;
+      /* padding: 5rem 0rem 5rem 4rem; */
+      /* margin-bottom: 3rem; */
+      justify-content: flex-end;
+      padding: 40px 0;
+  
+}
+
+.form-section1 {
+  width: 65%;
+  padding-right: 3rem;
+}
+
+.form-section1 h1 {
+  margin: 0;
+  font-family: Cal Sans;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 88.32px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 0.5rem;
+}
+
+.image-section1 {
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-section1 img {
+  width: 100%; /* Make the image fill the width of the container */
+  object-fit: contain; /* Ensure the entire image is visible */
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 250, 229, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 71.06%
+  );
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds spacing between form elements */
+}
+
+.profile-form h2 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px; /* Adds spacing between grouped inputs */
+  flex-wrap: wrap; /* Ensures inputs wrap on smaller screens */
+}
+
+.form-group div {
+  flex: 1; /* Makes each input container flexible and evenly spaced */
+  min-width: 200px; /* Ensures a minimum width for each input box */
+}
+
+.form-group label {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.checkbox-group p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+ span {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(130, 130, 130, 1);
+}
+
+
+.form-group textarea{
+    height: 0px;
+}
+
+ textarea,
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+  padding: 13px 17px 13px 17px;
+  border: 1px solid #828282;
+  box-shadow: 0px 0.98px 1.96px 0px rgba(0, 0, 0, 0.2);
+color: rgba(143, 143, 143, 1);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #ffffd3;
+  resize: none;
+ 
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px; /* Adds spacing between label and input */
+  display: block; /* Ensures the label is above the input */
+}
+
+.submit-btn-profile {
+  background-color: rgba(255, 230, 160, 1) ;
+  color:  rgba(17, 17, 17, 1);
+  padding: 10px;
+  border: 1.14px solid rgba(0, 0, 0, 1);
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 29.38px;
+
+
+}
+
+.creative-info {
+  margin-bottom: 20px;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.creative-info h3 {
+  font-family: Cal Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(130, 130, 130, 1);
+  margin: 2rem 0rem 0rem;
+}
+
+.creative-info p {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin: 0 0 2rem 0;
+}
+
+.creative-info p span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgba(130, 130, 130, 1);
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 5px; /* Adds space between items */
+}
+.category,
+label {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(17, 17, 17, 1);
+}
+
+.category input,
+.category textarea {
+  width: 24px;
+  height: 24px;
+  margin: 0 2rem 0 1rem;
+}
+
+.border{
+   border: 1px solid rgba(130, 130, 130, 1);
+   border-radius: 8px;
+   padding: 0.5rem;
+   min-width: 80%;
+}
+
+.category div {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+label {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
+
+
+input:focus,
+textarea:focus {
+  border-color: #FFE6A0; /* Your desired focus color */
+  outline: none;
+}
+
+
+
+
+
+

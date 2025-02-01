@@ -1,0 +1,78 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: url('../../Images/Intro.jpg') center center / cover no-repeat, lightgray;
+  position: relative;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for text visibility */
+  z-index: 1;
+}
+
+.intro-content {
+  text-align: center;
+  z-index: 2; /* Ensure content is above the background and overlay */
+  padding: 20px; /* Add padding to avoid edge clipping */
+}
+
+.intro-logo {
+  width: 40%; /* Use percentage for responsive scaling */
+  max-width: 400px; /* Restrict maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.intro-text {
+  color: #E1E1E1;
+  font-family: "Cal Sans";
+  font-size: 2rem; /* Relative size for responsiveness */
+  font-weight: 600;
+  line-height: 1.5; /* Adjust for readability */
+  text-transform: uppercase;
+  margin-top: 20px; /* Add space between logo and text */
+  padding: 0 20px; /* Add side padding for smaller screens */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .intro-logo {
+    width: 50%; /* Reduce logo size for tablets */
+  }
+
+  .intro-text {
+    font-size: 1.8rem; /* Adjust text size for tablets */
+    margin-top: 15px; /* Reduce space */
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-logo {
+    width: 60%; /* Further reduce logo size for mobile devices */
+  }
+
+  .intro-text {
+    font-size: 1.5rem; /* Smaller text for smaller screens */
+    line-height: 1.4; /* Adjust line height */
+    padding: 0 15px; /* Increase side padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-logo {
+    width: 70%; /* Smallest logo size for very small screens */
+  }
+
+  .intro-text {
+    font-size: 1.2rem; /* Further reduce text size for very small screens */
+    margin-top: 10px; /* Smaller space between logo and text */
+  }
+}

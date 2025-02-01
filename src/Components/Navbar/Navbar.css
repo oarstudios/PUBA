@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  border-bottom: 1px solid #000;
+  background: var(--Primary-Yellow, #FFFFD3);
+  font-family: Arial, sans-serif;
+  height: 70px;
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Sticks to the top of the page */
+  z-index: 2000; /* Ensure navbar is above other content */
+}
+
+.navbar-logo {
+  width: 94px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.menu-links li {
+  list-style: none;
+  color: var(--Black, #111);
+  font-family: "Cal Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-links li:hover {
+  border-radius: 9px;
+  border: 1px solid #000;
+  background: var(--Highlight-Yellow, #FFE6A0);
+}
+
+/* Active Class Styling */
+.menu-links .active {
+  border-radius: 9px;
+  border: 1px solid #000;
+  background: var(--Highlight-Yellow, #FFE6A0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Show hamburger menu only on smaller screens */
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Below the navbar */
+    right: 0;
+    background: var(--Primary-Yellow, #FFFFD3);
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #000;
+    z-index: 1500;
+  }
+
+  .navbar-menu.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .menu-links {
+    flex-direction: column;
+    gap: 20px; /* Reduce gap for smaller screens */
+  }
+
+  .menu-links li {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-logo {
+    width: 80px; /* Adjust logo size for smaller screens */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-links li {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .navbar {
+    padding: 10px 20px; /* Reduce padding for very small screens */
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu-links{
+    gap: 20px;
+  }
+  .menu-links li{
+    padding: 7px 10px;
+    font-size: 1rem;
+  }
+}
