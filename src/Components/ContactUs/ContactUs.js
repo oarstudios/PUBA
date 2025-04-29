@@ -71,7 +71,7 @@ const ContactUs = () => {
               type="email"
               id="email"
               name="Email"
-              placeholder="email@janesfakedomain.net"
+              placeholder="Enter your email"
               required
             />
           </div>
