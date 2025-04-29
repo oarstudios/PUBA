@@ -13,11 +13,7 @@ const Welcome = () => {
         <div className="welcome-right">
           <h1 className="welcome-title">Welcome to PUBA,</h1>
           <p className="welcome-description">
-            Where creativity meets execution to bring your ideas to life. As a
-            full-service production agency, we specialize in delivering
-            end-to-end solutions for projects of any scale or medium. From
-            concept development and pre-production to flawless execution and
-            post-production polish, we handle it all.
+          Rooted in the rich narrative traditions of India, our production house is a dynamic creative studio committed to crafting compelling visual experiences across film, digital, and branded content. We blend innovative storytelling with cinematic precision, driven by a vision to elevate indigenous voices and redefine contemporary entertainment. With a focus on artistic integrity and technical excellence, we are building stories that resonate globally while staying deeply connected to cultural authenticity.
           </p>
         </div>
       </div>

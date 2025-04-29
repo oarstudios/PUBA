@@ -10,6 +10,8 @@ import WhatWeDo from "./Components/WhatWeDo/WhatWeDo";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Footer from "./Components/Footer/Footer";
 import SubmitProfile from "./Components/SubmitProfile/SubmitProfile";
+import OurVision from "./Components/OurVision";
+import OurServices from "./Components/OurServices";
 
 function App() {
   const welcomeRef = useRef(null);
@@ -55,6 +57,8 @@ function App() {
             </>
           }
         />
+        <Route path="/ourvision" element={<OurVision/>}/>
+        <Route path="/ourservices" element={<OurServices/>}/>
         <Route path="/submit-profile" element={<SubmitProfile />} />
       </Routes>
       <Footer />

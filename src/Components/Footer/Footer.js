@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import logo from "../../Images/logoBlack.png"
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -18,21 +19,54 @@ const Footer = () => {
         <div className="menu">
           <h4>MENU</h4>
           <ul>
-            <li>Submit Profile</li>
-            <li>Our Vision</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Our Services</li>
-          </ul>
+  <li>
+    <Link to={'/submit-profile'}>Submit Profile</Link>
+    </li>
+  <li>
+    <Link to={'/ourvision'}>Our Vision</Link>
+  </li>
+  <li>
+    <a href="mailto:pubaproductions@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+      Email Us
+    </a>
+  </li>
+  <li>
+    <a href="tel:+918451906113" style={{ color: 'inherit', textDecoration: 'none' }}>
+      Call Us
+    </a>
+  </li>
+  <li>
+    <Link to={'/ourservices'}>Our Services</Link>
+  </li>
+</ul>
+
         </div>
         <div className="connect">
           <h4>CONNECT</h4>
           <ul>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>YouTube</li>
-            <li>X</li>
-            <li>LinkedIn</li>
+            <li>
+            <a
+      href="https://www.instagram.com/pubaproductions?igsh=YncxbGhpbnAzaHdv"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: 'inherit', textDecoration: 'none' }}
+    >
+      Instagram
+    </a>
+            </li>
+            {/* <li>Facebook</li> */}
+            <li>
+            <a
+      href="https://youtube.com/@pubaproductions?si=_X5OuqVlN4cXe4PR"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: 'inherit', textDecoration: 'none' }}
+    >
+      YouTube
+    </a>
+            </li>
+            {/* <li>X</li> */}
+            {/* <li>LinkedIn</li> */}
           </ul>
         </div>
         <div className="logo">
